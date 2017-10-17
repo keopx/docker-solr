@@ -39,5 +39,4 @@ RUN \
    
 EXPOSE 8983
 # We will Put Our Image dockerimages/systemd-solr over that you should directly build that if you plan to run this in production
-#CMD ["/bin/bash", "-c", "/opt/solr/bin/solr -f"]
-CMD ["/bin/bash", "-c", "cd /opt/solr/example && java -Xmx256m -jar start.jar"]
+CMD ["/bin/bash", "-c", "/opt/solr/bin/solr -f"]
