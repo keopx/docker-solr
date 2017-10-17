@@ -20,10 +20,10 @@ RUN \
 # 'me' User in the future.
 
 # SOLR - https://github.com/dockerimages/docker-solr
-ENV SOLR_VERSION 3.6.2
+ENV SOLR_VERSION 5.0.0
 # ENV SOLR solr-$SOLR_VERSION - New
 # OLD - http://archive.apache.org/dist/lucene/solr/3.6.2/apache-solr-3.6.2.tgz
-ENV SOLR apache-solr-$SOLR_VERSION
+ENV SOLR solr-$SOLR_VERSION
 RUN \
    apt-get update && \
    apt-get -y install lsof curl procps && \
