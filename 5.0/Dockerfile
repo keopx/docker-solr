@@ -1,4 +1,4 @@
-FROM keopx/java
+FROM keopx/java:8
 
 MAINTAINER keopx <keopx@keopx.net>
 
