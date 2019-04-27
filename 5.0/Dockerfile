@@ -1,4 +1,4 @@
-FROM keopx/java:8
+FROM debian:stretch
 
 MAINTAINER keopx <keopx@keopx.net>
 
@@ -14,7 +14,7 @@ RUN \
    # Update repositories cache and distribution
 
 RUN \
-   apt-get -yqq install apt-transport-https ca-certificates python3-software-properties gnupg2
+   apt-get -yqq install apt-transport-https ca-certificates python3-software-properties gnupg2 openjdk-8-jre wget unzip
 
 # add our user and group first to make sure their IDs get assigned consistently, regardless of whatever dependencies get added
 # 'me' User in the future.
